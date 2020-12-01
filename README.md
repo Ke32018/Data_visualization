@@ -1,3 +1,3 @@
 # Data_visualization
 
-This is my project for data_visualization lessons
+There is my group project, personal assignment and lesson slides  for data_visualization lessons.
