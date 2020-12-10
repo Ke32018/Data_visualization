@@ -4,6 +4,7 @@
 
 - Ziyao Wang, 320180940361
 - Ke Lei, 320180939861
+- Tao Tao, 320180940281
 
 ## 1. Abstract
 
@@ -55,30 +56,41 @@ This information visualization result promotes the Adam algorithm with lower tra
 
 #### 3.1 Visualization background
 
-Adam is an algorithm for first-order gradient-based optimization of stochastic  objective  functions,  based  on  adaptive  estimates  of  lower-order  moments.  The method is straightforward to implement, is computationally efficient,has little memory requirements, is invariant to diagonal rescaling of the gradients,and is well suited for problems that are large in terms of data and/or parameters.The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients.Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. 
+Adam is an algorithm for first-order gradient-based optimization of stochastic  objective  functions,  based  on  adaptive  estimates  of  lower-order  moments.
 
 Our aim is to compare different algorithm to show some of Adam’s advantages.
 
 We want to evaluate the different algorithms by using large models and datasets,and we demonstrate Adam can efficiently solve practical deep learning problems.Otherwise, we use the same parameter initialization when comparing different optimization algorithms. 
 
 #### 3.2 The story of visualization
+The main characters in the visualization is Adam,Adagrad and SGD Nesterov.
+The main data of the visualization is logistic regression training negative log likelihood on MNIST images with 10,000 bag-of-words feature vectors.
 
+The visualization graph uses three lines of different colors to clearly compare the training costs of the three algorithms under different (0-45) iteration times.Our aim is to compare different algorithm to show some of Adam’s advantages.
 
+But this curve has flaws in cognitive theory, such as insufficient data clarity, and unfriendly red-green color blindness.There are redundant grid lines, etc.
 
 #### 3.3 how to read it
 
+According to the core information of the figure, the training cost difference of the three algorithms under the same number of iterations can be compared vertically. The line chart can help readers to study the reduction in training costs as the number of iterations increases.
 
+We can understand the data about the result of logistic regression training negative log likelihood on MNIST images with 10,000 bag-of-words feature vectors. We can find some important contexts. For example, the Adam yields similar convergence as SGD with momentum and both converge faster than Adagrad.
 
 #### 3.4 visual variables
-
+The curve in the figure represents that changing value of training cost because of different iterations over entire dataset.Different curve colors represent different algorithm types.
+X-axis represents iterations over the entire data set,y-axis represents the training cost.
 
 
 #### 3.5 the analysis of the information visualization
 
-用认知理论中的一些概念来说明可视化效果
+We compare Adam to accelerated SGD with Nesterov momentum and Adagrad using mini batch size of 128. According to the figure, we found that the Adam yields similar convergence as SGD with momentum and both converge faster than Adagrad. Adagrad can efficiently deal with sparse features and gradients as one of its main theoretical results whereas SGD is low at learning rare features. Adam with1/√t decay on its step size match the performance of Adagrad. 
 
-#### 3.6 context
+ In the figure, Adagrad outperforms SGD with Nesterov momentum by a large margin both with and without dropout noise.  Adam converges as fast as Adagrad.  Similar to Adagrad, Adam can take advantage of sparse features and obtain faster convergence rate than normal SGD with momentum.
 
+#### 3.6 cognitive theory of the visualization and its context
+According to the core information of the figure, the training cost difference of the three algorithms under the same number of iterations can be compared vertically. Readers can also take advantage of the line chart to study the reduction in training costs as the number of iterations increases.
+
+The curve has flaws in cognitive theory , such as insufficient data clarity, and unfriendly red-green color blindness.There are redundant grid lines, etc. So we need to improve the curve.
 
 
 ## 4.Replicate the information visualization
@@ -124,14 +136,13 @@ The specific code is in X$^{[3]}$.
     <img src="Improment_360.png" alt="Improment"/>
     </figure>
 </center>
-
 ## 6.Conclusion
 
+We have gained a lot from this project. We not only read a lot of papers on deep learning, but also practice the realization and improvement of visualization.
 
+We are surprised to find that even very important academic papers violate some principles of information visualization.If these important papers follow the relevant visualization principles, it will be easier for people to understand.
 
-
-
-
+This work will remind us to follow the principles of visualization when writing academic papers in the future.
 
 ## References
 
