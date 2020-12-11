@@ -148,10 +148,10 @@ This work will remind us to follow the principles of visualization when writing 
 
 ## References
 
-[1] [Deep learning paper](https://www.aminer.cn/pub/5550415745ce0a409eb3a739/adam-a-method-for-stochastic-optimization)
+[1] [**Adam: A Method for Stochastic Optimization**](https://www.aminer.cn/pub/5550415745ce0a409eb3a739/adam-a-method-for-stochastic-optimization)
 
-[2] [replicaate code](replicate.ipynb)
+[2] [replicaate code](sourcecode/replicate.ipynb)
 
-[3] [Improment code](Improment.ipynb)
+[3] [Improment code](sourcecode/Improment.ipynb)
 
 [4] [How Is Data Visualization Inflfluenced By Our Cognitive Processes?](https://medium.com/@jiajingguo/how-is-data-visualization-inflfluenced-by-our-cognitive-processes-281d8486abfe)
