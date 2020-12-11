@@ -36,7 +36,7 @@ https://www.aminer.cn/pub/5550415745ce0a409eb3a739/adam-a-method-for-stochastic-
 
 As we can see, the original chart we selected is like this:
 
-![origin chart](origin chart.png)
+![origin chart](sourcecode/origin chart.png)
 
 #### 2.3 Why we choose it
 
@@ -78,6 +78,7 @@ We can understand the data about the result of logistic regression training nega
 
 #### 3.4 visual variables
 The curve in the figure represents that changing value of training cost because of different iterations over entire dataset.Different curve colors represent different algorithm types.
+
 X-axis represents iterations over the entire data set,y-axis represents the training cost.
 
 
@@ -99,10 +100,12 @@ We use Matplotlib in Python to reproduce the image. The specific code is in X$^{
 
 <center> 
     <figure>
-    <img src="origin chart.png" alt="origin chart" style="zoom:90%;" />
-    <img src="replicate.png" alt="replicate"/>
+    <img src="sourcecode/origin chart.png" alt="origin chart" style="zoom:90%;" />
+    <img src="sourcecode/replicate.png" alt="replicate"/>
     </figure>
 </center>
+
+
 
 
 In the figure above, the chart on the left is origin chart and the right is our replicated chart.
@@ -122,8 +125,6 @@ There are changes we have improved.
 
 Please let me have a easy statement for these improvements. First, we change the three line color from red-green to blue-yellow legend. This is because the red-green can lead confusion to some people according to cognitive theory. In addition, too much grid will take away people's attention, which can take information overload. What's more, we turn off the top and right box to provide the minimum amount of information to make sure reader can concentrate on the graph itself.
 
-
-
 It's need to take attention to the color we choose to improve. The blue and yellow are contrast color that can give reader a more obvious sight to the contrast of different method in graph. It also intensify the advantage of AdaGrad method in comparison.
 
 #### 5.2 implement
@@ -132,10 +133,11 @@ The specific code is in X$^{[3]}$.
 
  <center> 
     <figure>
-    <img src="replicate.png" alt="replicate"/>
-    <img src="Improment_360.png" alt="Improment"/>
+    <img src="sourcecode/replicate.png" alt="replicate"/>
+    <img src="sourcecode/Improment_360.png" alt="Improment"/>
     </figure>
 </center>
+
 ## 6.Conclusion
 
 We have gained a lot from this project. We not only read a lot of papers on deep learning, but also practice the realization and improvement of visualization.
