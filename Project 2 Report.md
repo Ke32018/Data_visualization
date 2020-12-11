@@ -64,17 +64,16 @@ We want to evaluate the different algorithms by using large models and datasets,
 
 #### 3.2 The story of visualization
 The main characters in the visualization is Adam,Adagrad and SGD Nesterov.
+
 The main data of the visualization is logistic regression training negative log likelihood on MNIST images with 10,000 bag-of-words feature vectors.
 
-The visualization graph uses three lines of different colors to clearly compare the training costs of the three algorithms under different (0-45) iteration times.Our aim is to compare different algorithm to show some of Adam’s advantages.
-
-But this curve has flaws in cognitive theory, such as insufficient data clarity, and unfriendly red-green color blindness.There are redundant grid lines, etc.
+The visualization graph uses three lines of different colors to clearly compare the training costs of the three algorithms under different (0-45) iteration times.Our aim is to compare different algorithm to show some of Adamâ€™s advantages.
 
 #### 3.3 how to read it
 
-According to the core information of the figure, the training cost difference of the three algorithms under the same number of iterations can be compared vertically. The line chart can help readers to study the reduction in training costs as the number of iterations increases.
+According to the core information in the figure, readers can compare the vertical coordinate values (training cost) of three different color curves (algorithms) under the same number of iterations from the vertical direction. Readers can learn from the change trend of the three different color curves on the line chart the different decreasing trend of the training cost of the three algorithms as the number of iterations increases.
 
-We can understand the data about the result of logistic regression training negative log likelihood on MNIST images with 10,000 bag-of-words feature vectors. We can find some important contexts. For example, the Adam yields similar convergence as SGD with momentum and both converge faster than Adagrad.
+We can understand the data about the result of logistic regression training negative log likelihood on MNIST images with 10,000 bag-of-words feature vectors. We can find some important contents. For example, the Adam yields similar convergence as SGD with momentum and both converge faster than Adagrad.From the different downward trend of training costs of the three curves, we can find the advantages of Adam's algorithm compared to the other two algorithms.
 
 #### 3.4 visual variables
 The curve in the figure represents that changing value of training cost because of different iterations over entire dataset.Different curve colors represent different algorithm types.
@@ -84,14 +83,19 @@ X-axis represents iterations over the entire data set,y-axis represents the trai
 
 #### 3.5 the analysis of the information visualization
 
-We compare Adam to accelerated SGD with Nesterov momentum and Adagrad using mini batch size of 128. According to the figure, we found that the Adam yields similar convergence as SGD with momentum and both converge faster than Adagrad. Adagrad can efficiently deal with sparse features and gradients as one of its main theoretical results whereas SGD is low at learning rare features. Adam with1/√t decay on its step size match the performance of Adagrad. 
+We compare Adam to accelerated SGD with Nesterov momentum and Adagrad using mini batch size of 128. According to the figure, we found that the Adam yields similar convergence as SGD with momentum and both converge faster than Adagrad. Adagrad can efficiently deal with sparse features and gradients as one of its main theoretical results whereas SGD is low at learning rare features. Adam with1/âˆšt decay on its step size match the performance of Adagrad. 
 
  In the figure, Adagrad outperforms SGD with Nesterov momentum by a large margin both with and without dropout noise.  Adam converges as fast as Adagrad.  Similar to Adagrad, Adam can take advantage of sparse features and obtain faster convergence rate than normal SGD with momentum.
 
 #### 3.6 cognitive theory of the visualization and its context
-According to the core information of the figure, the training cost difference of the three algorithms under the same number of iterations can be compared vertically. Readers can also take advantage of the line chart to study the reduction in training costs as the number of iterations increases.
+According to the core information of the figure, the training cost difference of the three algorithms under the same number of iterations can be compared vertically. 
 
-The curve has flaws in cognitive theory , such as insufficient data clarity, and unfriendly red-green color blindness.There are redundant grid lines, etc. So we need to improve the curve.
+The context requires readers to understand the advantages of the Adam algorithm in terms of training costs through the rapid decline of the red curve in the line chart. The line chart in the visualization can better help readers compare the different decreasing trends of the training costs of the three different algorithms as the number of iterations increases.
+
+The curve has flaws in cognitive theory , such as insufficient data clarity. 
+The visualiztion uses red curves and green curves at the same time.This will make it difficult for red-green color blindness to compare the changing trends of the red curve and the green curve. Therefore, it is difficult for them to find the advantage of Adam algorithm over SGD algorithm.
+
+There are redundant grid lines, etc. So we need to improve the curve.
 
 
 ## 4.Replicate the information visualization
