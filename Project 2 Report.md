@@ -1,4 +1,4 @@
-# Project 2 Report
+# Adam visualization：analysing & improvement for comparing the three method
 
 ### Group X:
 
