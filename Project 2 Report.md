@@ -1,6 +1,6 @@
 # Adam visualization：analysing & improvement for comparing the three method
 
-### Group X:
+### Group 19:
 
 - Ziyao Wang, 320180940361
 - Ke Lei, 320180939861
